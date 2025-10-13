@@ -31,9 +31,14 @@
         /* Apply the Inter font globally */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #0a0a23; /* primary-dark - midnight blue */
-            color: #E5E7EB; /* light text */
+            background-color: #0a0a23;
+            color: #E5E7EB;
             scroll-behavior: smooth;
+            background-image: url('bg.png');
+            background-size: 400px 600px; /* or any tile size you want */
+            background-repeat: repeat;
+            background-attachment: scroll;
+            background-position: top left;
         }
         /* Custom scrollbar for better aesthetics */
         ::-webkit-scrollbar {
@@ -109,16 +114,16 @@
         
         <!-- 1. Hero / About Section -->
         <section id="about" class="py-10 sm:py-14 lg:py-16 px-4 sm:px-6 lg:px-8 text-center">
-            <div class="max-w-4xl mx-auto">
+            <div class="max-w-4xl mx-auto bg-secondary-dark/50 p-8 md:p-10 rounded-xl shadow-2xl border border-secondary-dark flex flex-col items-center">
                 <div class="mb-6 mx-auto w-32 h-32 bg-gray-600 rounded-full overflow-hidden border-4 border-accent shadow-2xl">
                     <!-- Placeholder for profile image -->
                     <img src="pfp.jpg" alt="Profile Picture" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/128x128/6B7280/FFFFFF?text=OK';" />
                 </div>
                 <p class="text-xl text-accent font-semibold mb-3 tracking-wider uppercase">Junior Computer Science Student</p>
-                <h1 class="text-5xl sm:text-7xl font-extrabold text-gray-400 leading-tight mb-6">
-                    Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-blue-900">Omar Khattab</span>
+                <h1 class="text-5xl sm:text-7xl font-extrabold text-gray-300 leading-tight mb-6">
+                    Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-900 to-blue-800">Omar Khattab</span>
                 </h1>
-                <p class="text-lg sm:text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+                <p class="text-lg sm:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
                     I'm a junior Computer Science student with a strong passion for Information Technology and Web Development.
                     I love creating efficient solutions and continuously learning new technologies to enhance my skills.
                 </p>
@@ -126,7 +131,7 @@
                     <a href="#contact" class="interactive-element bg-accent hover:bg-[white] text-primary-dark font-bold py-3 px-8 rounded-xl shadow-lg shadow-accent/30 transition duration-300">
                         Get In Touch
                     </a>
-                    <a href="https://drive.google.com/file/d/1xDSxU0Xeohp2VMGPErlA1J6mCUeYqlxy/view?usp=sharing" target="_blank" rel="noopener" class="interactive-element border border-accent text-accent hover:text-gray-100 hover:bg-accent/10 font-bold py-3 px-8 rounded-xl transition duration-300">
+                    <a href="https://drive.google.com/file/d/1xDSxU0Xeohp2VMGPErlA1J6mCUeYqlxy/view?usp=sharing" target="_blank" rel="noopener" class="interactive-element bg-white/15 border border-accent text-accent-10 hover:text-gray-100 hover:bg-accent/10 font-bold py-3 px-8 rounded-xl transition duration-300">
                         Preview CV
                     </a>
                 </div>
@@ -146,22 +151,22 @@
                     </h3>
                     <div class="flex flex-wrap justify-center gap-4 gap-y-4">
                         <!-- Skill Card: C++ -->
-                        <div class="p-4 bg-primary-dark rounded-lg text-center w-28 interactive-element border border-secondary-dark hover:border-accent">
+                        <div class="p-4 bg-primary-dark/50 rounded-lg text-center w-28 interactive-element border border-secondary-dark hover:border-accent">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++ Logo" class="mx-auto mb-2 h-8 w-8">
                             <p class="font-semibold text-gray-400 text-sm">C++</p>
                         </div>
                         <!-- Skill Card: Java -->
-                        <div class="p-4 bg-primary-dark rounded-lg text-center w-28 interactive-element border border-secondary-dark hover:border-accent">
+                        <div class="p-4 bg-primary-dark/50 rounded-lg text-center w-28 interactive-element border border-secondary-dark hover:border-accent">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java Logo" class="mx-auto mb-2 h-8 w-8">
                             <p class="font-semibold text-gray-400 text-sm">Java</p>
                         </div>
                         <!-- Skill Card: C# -->
-                        <div class="p-4 bg-primary-dark rounded-lg text-center w-28 interactive-element border border-secondary-dark hover:border-accent">
+                        <div class="p-4 bg-primary-dark/50 rounded-lg text-center w-28 interactive-element border border-secondary-dark hover:border-accent">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C# Logo" class="mx-auto mb-2 h-8 w-8">
                             <p class="font-semibold text-gray-400 text-sm">C#</p>
                         </div>
                         <!-- Skill Card: Dart -->
-                        <div class="p-4 bg-primary-dark rounded-lg text-center w-28 interactive-element border border-secondary-dark hover:border-accent">
+                        <div class="p-4 bg-primary-dark/50 rounded-lg text-center w-28 interactive-element border border-secondary-dark hover:border-accent">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart Logo" class="mx-auto mb-2 h-8 w-8">
                             <p class="font-semibold text-gray-400 text-sm">Dart</p>
                         </div>
@@ -176,22 +181,22 @@
                     </h3>
                     <div class="flex flex-wrap justify-center gap-4 gap-y-4">
                         <!-- Skill Card: HTML5 -->
-                        <div class="p-4 bg-primary-dark rounded-lg text-center w-28 interactive-element border border-secondary-dark hover:border-accent">
+                        <div class="p-4 bg-primary-dark/50 rounded-lg text-center w-28 interactive-element border border-secondary-dark hover:border-accent">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 Logo" class="mx-auto mb-2 h-8 w-8">
                             <p class="font-semibold text-gray-400 text-sm">HTML5</p>
                         </div>
                         <!-- Skill Card: CSS3 -->
-                        <div class="p-4 bg-primary-dark rounded-lg text-center w-28 interactive-element border border-secondary-dark hover:border-accent">
+                        <div class="p-4 bg-primary-dark/50 rounded-lg text-center w-28 interactive-element border border-secondary-dark hover:border-accent">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 Logo" class="mx-auto mb-2 h-8 w-8">
                             <p class="font-semibold text-gray-400 text-sm">CSS3</p>
                         </div>
                         <!-- Skill Card: JavaScript -->
-                        <div class="p-4 bg-primary-dark rounded-lg text-center w-28 interactive-element border border-secondary-dark hover:border-accent">
+                        <div class="p-4 bg-primary-dark/50 rounded-lg text-center w-28 interactive-element border border-secondary-dark hover:border-accent">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Logo" class="mx-auto mb-2 h-8 w-8">
                             <p class="font-semibold text-gray-400 text-sm">JavaScript</p>
                         </div>
                         <!-- Skill Card: Flutter -->
-                        <div class="p-4 bg-primary-dark rounded-lg text-center w-28 interactive-element border border-secondary-dark hover:border-accent">
+                        <div class="p-4 bg-primary-dark/50 rounded-lg text-center w-28 interactive-element border border-secondary-dark hover:border-accent">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter Logo" class="mx-auto mb-2 h-8 w-8">
                             <p class="font-semibold text-gray-400 text-sm">Flutter</p>
                         </div>
@@ -206,22 +211,22 @@
                     </h3>
                     <div class="flex flex-wrap justify-center gap-4 gap-y-4">
                         <!-- Skill Card: Networking/CCNA -->
-                        <div class="p-4 bg-primary-dark rounded-lg text-center w-28 interactive-element border border-secondary-dark hover:border-accent">
+                        <div class="p-4 bg-primary-dark/50 rounded-lg text-center w-28 interactive-element border border-secondary-dark hover:border-accent">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/networkx/networkx-original.svg" alt="Networking Logo" class="mx-auto mb-2 h-8 w-8">
                             <p class="font-semibold text-gray-400 text-sm">Networking</p>
                         </div>
                         <!-- Skill Card: SQL Server -->
-                        <div class="p-4 bg-primary-dark rounded-lg text-center w-28 interactive-element border border-secondary-dark hover:border-accent">
+                        <div class="p-4 bg-primary-dark/50 rounded-lg text-center w-28 interactive-element border border-secondary-dark hover:border-accent">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="SQL Server Logo" class="mx-auto mb-2 h-8 w-8">
                             <p class="font-semibold text-gray-400 text-sm">SQL Server</p>
                         </div>
                         <!-- Skill Card: Git -->
-                        <div class="p-4 bg-primary-dark rounded-lg text-center w-28 interactive-element border border-secondary-dark hover:border-accent">
+                        <div class="p-4 bg-primary-dark/50 rounded-lg text-center w-28 interactive-element border border-secondary-dark hover:border-accent">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git Logo" class="mx-auto mb-2 h-8 w-8">
                             <p class="font-semibold text-gray-400 text-sm">Git</p>
                         </div>
                         <!-- Skill Card: OOP/CRUD -->
-                        <div class="p-4 bg-primary-dark rounded-lg text-center w-28 interactive-element border border-secondary-dark hover:border-accent">
+                        <div class="p-4 bg-primary-dark/50 rounded-lg text-center w-28 interactive-element border border-secondary-dark hover:border-accent">
                             <i data-lucide="zap" class="mx-auto mb-2 h-8 w-8 text-yellow-500"></i>
                             <p class="font-semibold text-gray-400 text-sm">OOP/CRUD</p>
                         </div>
@@ -236,7 +241,7 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 
                 <!-- Project Card 1: Enterprise Network Design (CCNA Final Project) -->
-                <div class="bg-secondary-dark rounded-xl overflow-hidden interactive-element shadow-2xl border border-secondary-dark hover:border-accent/50">
+                <div class="bg-secondary-dark/50 rounded-xl overflow-hidden interactive-element shadow-2xl border border-secondary-dark hover:border-accent/80">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/networkx/networkx-original.svg" alt="Networking Icon" class="mx-auto mt-6 mb-3 h-20 w-20" />
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-400 mb-2">Enterprise Network Design (CCNA Final)</h3>
@@ -255,7 +260,7 @@
                 </div>
 
                 <!-- Project Card 2: University Management System (Was Project 6) -->
-                <div class="bg-secondary-dark rounded-xl overflow-hidden interactive-element shadow-2xl border border-secondary-dark hover:border-accent/50">
+                <div class="bg-secondary-dark/50 rounded-xl overflow-hidden interactive-element shadow-2xl border border-secondary-dark hover:border-accent/80">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java Icon" class="mx-auto mt-6 mb-3 h-20 w-20" />
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-400 mb-2">University Management System (Java/SQL)</h3>
@@ -274,7 +279,7 @@
                 </div>
                 
                 <!-- Project Card 3: Hospital Management System (Was Project 4) -->
-                <div class="bg-secondary-dark rounded-xl overflow-hidden interactive-element shadow-2xl border border-secondary-dark hover:border-accent/50">
+                <div class="bg-secondary-dark/50 rounded-xl overflow-hidden interactive-element shadow-2xl border border-secondary-dark hover:border-accent/80">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++ Icon" class="mx-auto mt-6 mb-3 h-20 w-20" />
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-400 mb-2">Hospital Management System (C++)</h3>
@@ -293,7 +298,7 @@
                 </div>
                 
                 <!-- Project Card 4: Personal Portfolio Website (Was Project 5) -->
-                <div class="bg-secondary-dark rounded-xl overflow-hidden interactive-element shadow-2xl border border-secondary-dark hover:border-accent/50">
+                <div class="bg-secondary-dark/50 rounded-xl overflow-hidden interactive-element shadow-2xl border border-secondary-dark hover:border-accent/80">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 Icon" class="mx-auto mt-6 mb-3 h-20 w-20" />
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-400 mb-2">Portfolio Website (HTML/Tailwind)</h3>
@@ -319,7 +324,7 @@
             <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-400">Volunteering & Activities</h2>
             <div class="max-w-4xl mx-auto space-y-6">
                 <!-- Activity Card 1: ASME (OC & Logistics vicehead) -->
-                <div class="bg-secondary-dark p-6 rounded-xl interactive-element flex items-start space-x-4 border border-secondary-dark hover:border-accent/50">
+                <div class="bg-secondary-dark/50 p-6 rounded-xl interactive-element flex items-start space-x-4 border border-secondary-dark hover:border-accent/80">
                     <div class="flex items-center justify-center min-w-[56px] min-h-[56px] max-w-[80px] max-h-[80px]">
                         <img src="https://cdn.brandfetch.io/idlkT8YOgi/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1754313098719" alt="ASME Icon" class="object-contain w-14 h-14" />
                     </div>
@@ -329,19 +334,8 @@
                     </div>
                 </div>
                 
-                <!-- Activity Card 2: ASME (OC & Logistics member) -->
-                <div class="bg-secondary-dark p-6 rounded-xl interactive-element flex items-start space-x-4 border border-secondary-dark hover:border-accent/50">
-                    <div class="flex items-center justify-center min-w-[56px] min-h-[56px] max-w-[80px] max-h-[80px]">
-                        <img src="https://cdn.brandfetch.io/idlkT8YOgi/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1754313098719" alt="ASME Icon" class="object-contain w-14 h-14" />
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-gray-400">OC & Logistics Member at ASME - Cairo University</h3>
-                        <p class="text-sm text-gray-400">2024 - 2025</p>
-                    </div>
-                </div>
-
-                <!-- Activity Card 3: Crowdin Translator -->
-                <div class="bg-secondary-dark p-6 rounded-xl interactive-element flex items-start space-x-4 border border-secondary-dark hover:border-accent/50">
+                <!-- Activity Card 2: Crowdin Translator -->
+                <div class="bg-secondary-dark/50 p-6 rounded-xl interactive-element flex items-start space-x-4 border border-secondary-dark hover:border-accent/80">
                     <div class="flex items-center justify-center min-w-[56px] min-h-[56px] max-w-[80px] max-h-[80px]">
                         <img src="https://cdn.brandfetch.io/idw9UA7ClH/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1752708055877" alt="Crowdin Icon" class="object-contain w-14 h-14" />
                     </div>
@@ -351,8 +345,19 @@
                     </div>
                 </div>
 
+                <!-- Activity Card 3: ASME (OC & Logistics member) -->
+                <div class="bg-secondary-dark/50 p-6 rounded-xl interactive-element flex items-start space-x-4 border border-secondary-dark hover:border-accent/80">
+                    <div class="flex items-center justify-center min-w-[56px] min-h-[56px] max-w-[80px] max-h-[80px]">
+                        <img src="https://cdn.brandfetch.io/idlkT8YOgi/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1754313098719" alt="ASME Icon" class="object-contain w-14 h-14" />
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-400">OC & Logistics Member at ASME - Cairo University</h3>
+                        <p class="text-sm text-gray-400">2024 - 2025</p>
+                    </div>
+                </div>
+
                 <!-- Activity Card 4: MSP Dev Member -->
-                <div class="bg-secondary-dark p-6 rounded-xl interactive-element flex items-start space-x-4 border border-secondary-dark hover:border-accent/50">
+                <div class="bg-secondary-dark/50 p-6 rounded-xl interactive-element flex items-start space-x-4 border border-secondary-dark hover:border-accent/80">
                     <div class="flex items-center justify-center min-w-[56px] min-h-[56px] max-w-[80px] max-h-[80px]">
                         <img src="https://cdn.brandfetch.io/idchmboHEZ/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1727706673120" alt="MSP Icon" class="object-contain w-14 h-14" />
                     </div>
@@ -362,7 +367,7 @@
                     </div>
                 </div>
                 <!-- Activity Card 5: Enactus HR/PM -->
-                <div class="bg-secondary-dark p-6 rounded-xl interactive-element flex items-start space-x-4 border border-secondary-dark hover:border-accent/50">
+                <div class="bg-secondary-dark/50 p-6 rounded-xl interactive-element flex items-start space-x-4 border border-secondary-dark hover:border-accent/80">
                     <div class="flex items-center justify-center min-w-[56px] min-h-[56px] max-w-[80px] max-h-[80px]">
                         <img src="https://cdn.brandfetch.io/idlcIC5qFI/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1668081272369" alt="Enactus Icon" class="object-contain w-14 h-14" />
                     </div>
@@ -372,7 +377,7 @@
                     </div>
                 </div>
                 <!-- Activity Card 5: Ai catalyst Organizer -->
-                <div class="bg-secondary-dark p-6 rounded-xl interactive-element flex items-start space-x-4 border border-secondary-dark hover:border-accent/50">
+                <div class="bg-secondary-dark/50 p-6 rounded-xl interactive-element flex items-start space-x-4 border border-secondary-dark hover:border-accent/80">
                     <div class="flex items-center justify-center min-w-[56px] min-h-[56px] max-w-[80px] max-h-[80px]">
                         <img src="https://cdn.brandfetch.io/id94j80XKt/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1747642845163" alt="Ai catalyst Icon" class="object-contain w-14 h-14" />
                     </div>
@@ -389,29 +394,48 @@
         <!-- 5. Contact Section -->
         <section id="contact" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 border-t border-secondary-dark">
             <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-400">Let's Connect</h2>
-            <div class="flex justify-center items-center space-x-8 sm:space-x-12">
-                <!-- GitHub -->
-                <a href="https://github.com/TheKhattab" target="_blank" rel="noopener" aria-label="GitHub"
-                   class="interactive-element flex items-center justify-center rounded-full bg-primary-dark border border-secondary-dark hover:border-accent p-4 transition duration-300">
-                    <i data-lucide="github" class="w-10 h-10 text-gray-400 hover:text-accent"></i>
-                </a>
-                <!-- LinkedIn -->
-                <a href="https://linkedin.com/in/omar-krm-khattab" target="_blank" rel="noopener" aria-label="LinkedIn"
-                   class="interactive-element flex items-center justify-center rounded-full bg-primary-dark border border-secondary-dark hover:border-accent p-4 transition duration-300">
-                    <i data-lucide="linkedin" class="w-10 h-10 text-gray-400 hover:text-accent"></i>
-                </a>
-                <!-- Gmail -->
-                <a id="gmail-link" href="mailto:omar.krm.khattab@gmail.com" aria-label="Gmail"
-                   class="interactive-element flex items-center justify-center rounded-full bg-primary-dark border border-secondary-dark hover:border-accent p-4 transition duration-300">
-                    <svg class="w-10 h-10" viewBox="0 0 48 48" fill="none">
-                        <rect width="48" height="48" rx="12" fill="none"/>
-                        <path d="M8 16v16a4 4 0 004 4h24a4 4 0 004-4V16" stroke="#E5E7EB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M8 16l16 12 16-12" stroke="#E24434" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </a>
-            </div>
-            <div class="flex justify-center mt-6">
-                <span class="text-gray-400 text-sm text-center break-all">omar.krm.khattab@gmail.com</span>
+            <div class="max-w-xl mx-auto bg-secondary-dark/50 p-8 md:p-10 rounded-xl shadow-2xl border border-secondary-dark flex flex-col items-center">
+                <div class="flex justify-center items-center space-x-8 sm:space-x-12">
+                    <!-- GitHub -->
+                    <a href="https://github.com/TheKhattab" target="_blank" rel="noopener" aria-label="GitHub"
+                       class="interactive-element flex items-center justify-center rounded-full bg-primary-dark border border-secondary-dark hover:border-accent p-4 transition duration-300 group">
+                        <i data-lucide="github" class="w-10 h-10 transition-colors duration-300 text-gray-400 group-hover:text-accent"></i>
+                    </a>
+                    <!-- LinkedIn -->
+                    <a href="https://linkedin.com/in/omar-krm-khattab" target="_blank" rel="noopener" aria-label="LinkedIn"
+                       class="interactive-element flex items-center justify-center rounded-full bg-primary-dark border border-secondary-dark hover:border-accent p-4 transition duration-300 group">
+                        <i data-lucide="linkedin" class="w-10 h-10 transition-colors duration-300 text-gray-400 group-hover:text-accent"></i>
+                    </a>
+                    <!-- Gmail -->
+                    <a id="gmail-link" href="mailto:omar.krm.khattab@gmail.com" aria-label="Gmail"
+                       class="interactive-element flex items-center justify-center rounded-full bg-primary-dark border border-secondary-dark hover:border-accent p-4 transition duration-300 group">
+                        <svg class="w-10 h-10 transition-colors duration-300 text-gray-400 group-hover:text-accent" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="12" fill="none"/>
+                            <path d="M8 16v16a4 4 0 004 4h24a4 4 0 004-4V16"
+                                  stroke="currentColor"
+                                  stroke-width="3"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M8 16l16 12 16-12"
+                                  stroke="currentColor"
+                                  stroke-width="3"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  class="transition-colors duration-300"
+                                  style="color: #E24434;"
+                                  />
+                            <style>
+                                /* Ensure the red part transitions to accent on hover */
+                                .group:hover svg path:last-of-type {
+                                    stroke: #590363 !important;
+                                }
+                            </style>
+                        </svg>
+                    </a>
+                </div>
+                <div class="flex justify-center mt-6">
+                    <span class="text-gray-400 text-sm text-center break-all">omar.krm.khattab@gmail.com</span>
+                </div>
             </div>
         </section>
 
@@ -617,4 +641,3 @@
     </script>
 </body>
 </html>
-
